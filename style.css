@@ -1,0 +1,345 @@
+body {
+    font-family: Arial, sans-serif;  
+    background-color: #121212;
+}
+
+/* navbar */
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 2px solid #2F4F4F; */
+    background-color: black;
+    color: white;
+    justify-content: space-evenly;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+
+
+}
+
+.nav-item {
+    display: flex;
+    border: 2px solid #2F4F4F;
+    color: white;
+    background-color: #121212;
+     margin-top: 5px; 
+     margin-bottom: 5px;
+    padding: 5px; 
+    width: 110px;
+    height: 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.nav-item:hover {
+    background-color: black; 
+    color: #FFFFFF; 
+    border-color: #A8FF00; 
+}
+
+.contact{
+    width: 125px;
+}
+
+
+/* image and description */
+
+.mydetails{ 
+
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    /* margin-top: 100px; */
+    justify-content: center;
+    text-align: center;
+   
+    padding: 10px; 
+    border-radius: 10px; 
+     
+}
+
+.image{
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+     object-fit: cover;
+     object-position: top;
+     border:1px solid #A8FF00;   
+
+}
+
+.name{
+    
+    color:white ;
+    text-decoration: underline  ;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.mydetails p {
+    color:white; 
+    font-size: 1.1em; 
+    margin-top: 10px; 
+}
+
+.resume{
+    background-color: #A8FF00;
+    color: #121212;
+}
+
+
+/* skills */
+.heading{
+    color: white;
+}
+
+.card {
+    border: 2px solid #2F4F4F;
+    border-radius: 10px;
+    background-color:  #4B4B4B; 
+    padding: 20px;
+    margin-bottom: 20px;
+    flex: 1 1 23%; /* Make each card flexible and ensure 4 cards fit in one row */
+    box-sizing: border-box; 
+}
+
+/* Skills section layout */
+.skills {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    gap: 15px;
+}
+
+/* Card body padding */
+.card-body {
+    padding: 20px;
+}
+
+/* Progress bar container and individual skill alignment */
+.progress-container {
+    position: relative;
+    margin: 10px 0;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    height: 20px; 
+    border: 2px solid #2F4F4F; 
+    position: relative;
+    overflow: hidden; /* Hide overflow content */
+}
+
+.progress {
+    height: 100%;
+    background-color: #A8FF00;  
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.progress-percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.9em;
+    font-weight: bold;
+    color:black; 
+}
+
+
+
+
+.skill i {
+    font-size: 1.8em;
+    color: #333;
+    margin-right: 8px; 
+}
+
+
+/* suggested by chatgpt */
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 45%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex: 1 1 100%; 
+    }
+}
+
+
+
+/* projects */
+
+.card-img-top {
+    width: 100%;
+    height: 150px;
+    object-fit: cover; /* Ensures images fit within the card */
+}
+
+
+
+.btn-primary {
+    height: 50px;
+    width: 150px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #121212;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    box-shadow: 2px 2px 2px  #A8FF00;
+}
+
+/* .cardp {
+    border: 2px solid #2F4F4F;
+    border-radius: 10px;
+    background-color: #4B4B4B;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+} */
+
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    gap: 20px; 
+    margin-top: 20px;
+}
+
+.card {
+    flex: 1 1 22%; 
+    width: 22%; 
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    position: relative; /* Ensure the card's position is relative */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+/* Add this to your existing CSS */
+.card:hover {
+    transform: scale(1.05); /* Adjust the scale value as needed */
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.9); /* Smaller bottom shadow */
+    z-index: 10;
+}
+
+
+
+.card-text {
+    color: #FFFFFF;
+    text-align: justify;
+}
+
+.card-title {
+    text-decoration: underline;
+    color: black; 
+    text-align: center;
+}
+
+.spaces{
+    margin-top: 76px;
+}
+
+
+
+.spaceb{
+    margin-top: 77px;
+}
+
+.spacec{
+    margin-top: 80px;
+}
+
+/* Responsive Design: Adjust layout for smaller screens */
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 45%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex: 1 1 100%; 
+    }
+}
+
+/* contact me */
+
+.contacts{
+    display: flex;
+    justify-content: center;  /* Center the items horizontally */
+    align-items: center;  /* Center the items vertically */
+    gap: 30px;  /* Space between icons */
+    flex-wrap: wrap;  /* Allow items to wrap on smaller screens */
+    margin-top: 30px;
+    width: 100%;  /* Ensure the container takes up full width */
+}
+
+.social {
+    font-size: 2rem; 
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: color 0.3s ease;  /* Smooth hover effect */
+}
+
+
+.social:hover {
+    color: #A8FF00;  
+    font-size: 2.5rem;
+   
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.email-text {
+    font-size: 1rem;  /* Increase email text size */
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.email-text:hover {
+    color: #39FF14;  /* Hover effect for the email text */
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    .contact {
+        flex-direction: column;  /* Stack icons vertically on smaller screens */
+    }
+
+    .social {
+        font-size: 3rem;  /* Adjust icon size for mobile */
+    }
+
+    .email-text {
+        font-size: 0.5rem;  /* Adjust email text size for mobile */
+    }
+}
+
